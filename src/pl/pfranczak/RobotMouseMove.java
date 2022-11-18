@@ -7,9 +7,7 @@ public class RobotMouseMove {
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		Robot robot = new Robot();
 		while(true) {
-			robot.mouseMove(0, 0);
-			Thread.sleep(10000);
-			robot.mouseMove(10, 10);
+			robot.keyPress(KeyEvent.VK_F13);
 			Thread.sleep(10000);
 		}
 	}
